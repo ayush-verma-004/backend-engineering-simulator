@@ -1,0 +1,23 @@
+spring:
+  # MySQL Connection configuration for tests
+  datasource:
+    url: ${TEST_DATASOURCE_URL:jdbc:mysql://localhost:3306/backendsim_test?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true}
+    username: ${TEST_DATASOURCE_USERNAME:root}
+    password: ${TEST_DATASOURCE_PASSWORD:password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        generate_statistics: false
+
+# Reduced logging verbosity during tests
+logging:
+  level:
+    root: WARN
+    com.backendsim.platform: DEBUG
+    org.springframework: WARN
+    org.hibernate: WARN

@@ -1,0 +1,15 @@
+package com.backendsim.platform;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+
+@SpringBootTest
+@ActiveProfiles("test")
+class PlatformApplicationTests {
+
+    @Test
+    void contextLoads() {
+        // Basic test to verify that the Spring ApplicationContext starts up successfully
+    }
+}
