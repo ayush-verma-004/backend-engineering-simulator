@@ -1,0 +1,29 @@
+# Maven build files
+target/
+**/target/
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+**/*.iml
+
+# Visual Studio Code project files
+.vscode/
+
+# Eclipse project files
+.project
+.classpath
+.settings/
+
+# Log files
+*.log
+**/logs/
+**/*.log
+
+# Environment properties files
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
